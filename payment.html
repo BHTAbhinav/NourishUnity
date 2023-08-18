@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="navbar-container">
+        <header>
+          <div class="header-content">
+            <div class="logo">
+              <img src="Images/NU logo final.png" alt="NourishUnity Logo" />
+            </div>
+            <h1 style="color: black">NourishUnity</h1>
+          </div>
+        </header>
+  
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="who-we-are.html" target="_blank">Who Are We</a></li>
+            <li><a href="supporters.html" target="_blank">Supporters</a></li>
+            <li><a href="donate-now.html" target="_blank">Donate Now</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="body">
+		<div class="container">
+			<div class="title">
+				<p>Donation Form</p>
+				<p style="font-size:16px">Thanks for donating to our cause</p>
+			</div>
+				<form action="#">
+					<div class="user-details">
+						<div class="input-box">
+							<span class="details">Full Name</span>
+							<input type="text" placeholder="Enter your full name" required>
+						</div>
+						<div class="input-box">
+							<span class="details">Email</span>
+							<input type="text" placeholder="Enter your email" required>
+						</div>
+						<div class="input-box">
+							<span class="details">How much would you like to donate?</span>
+							<input type="text" placeholder="Enter the amount" required>
+						</div>
+						<div class="input-box">
+							<span class="details">How would you like to donate?</span>
+							<select class="details" id="select" onchange="paymentselect();">
+								<option>Unified Payment Interface (UPI)</option>
+								<option>Credit/Debit card</option>
+								<option>Net Banking</option>
+								<option>Cash</option>
+							</select>
+							<input type="text" id="txtvalue" required>
+						</div>
+					</div>	
+					<div class="button">
+						<input type="submit" value="submit">
+					</div>
+				</form>
+            </div>    
+        <div class="pop">
+            <div class="container">
+            <p>Your information is successfully recorder Thank You.
+                One of our colleague will soon contact you!!!
+            </p> 
+            <div class="b"><button id="payment">payment</button></div>
+        </div>
+        </div>
+      </div>
+      <footer>
+          <p>&copy; 2023 NourishUnity. All rights reserved.</p>
+        </footer>
+        <script src="1.js"></script>
+</body>
+</html>
