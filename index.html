@@ -124,7 +124,7 @@
         .then((response) => response.json())
         .then((data) => {
           const mealDataDiv = document.getElementById("mealData");
-          mealDataDiv.innerHTML = `<h2 class="text-xl font-semibold mb-2">Random Meal:</h2><p>${data.meals[0].strMeal}</p>`;
+          mealDataDiv.innerHTML = `<h2 class="text-xl font-semibold mb-2">Random Nutritious Meal:</h2><p>${data.meals[0].strMeal}</p>`;
         })
         .catch((error) => console.error("Error fetching meal data:", error));
     </script>
