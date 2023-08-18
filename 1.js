@@ -1,3 +1,12 @@
+function success(element) {
+    var ss = document.getElementById("success");
+    var tabs = document.getElementsByClassName("tabs mt-3")[0];
+    var modal = document.getElementsByClassName("modal-body")[0];
+    modal.style.display = "none";
+    ss.style.display = "";
+    ss.style.margin="20px";
+}
+
 function paymentselect()
     {
         var d=document.getElementById("select");
