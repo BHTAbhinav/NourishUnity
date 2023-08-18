@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.better-place {
+  display: inline;
+  font-size: 44px;
+  color: #002fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+section {
+  padding: 2em;
+  text-align: center;
+}
+
+nav {
+  background-color: teal;
+  border-radius: 5px;
+  color: black;
+  padding: 1em;
+  font-size: large;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #df8115;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+
+.column-separator {
+  width: 1px;
+  background-color: black;
+  border-color: black;
+  height: 100%;
+}
+
+.columns-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.column {
+  flex: 1;
+  padding: 0 15px;
+  border-right: 2px solid teal;
+}
+.column_3 {
+  flex: 1;
+  padding: 0 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0);
+}
+
+#who-we-are {
+  height: 120px;
+  background-image: url(Images/who\ are\ we.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2em;
+}
+
+#donation {
+  background-image: url(images/donatebutton.png);
+  height: 23vh;
+  background-size: contain;
+  background-position: right;
+  margin-top: 10px;
+  margin-right: 50px;
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  padding: 2em;
+}
+
+#support {
+  text-align: left;
+}
+
+#donate-now {
+  text-align: center;
+}
+
+#who-are-we-content {
+  text-align: left;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  margin: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #df8115;
+}
+.make-better-place {
+  height: 500px;
+  background-image: url("Images/world hunger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
