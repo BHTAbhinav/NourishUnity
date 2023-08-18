@@ -296,8 +296,7 @@ form .user-details .input-box {
   transition: background-color 0.3s;
   background-image: url(images/background.jpg);
 }
-
-form .button input {
+A form .button input {
   height: 30px;
   width: 85px;
   border-radius: 5px;
