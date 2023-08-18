@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:'Poppins',sans-serif;
 }
 
 body {
@@ -211,4 +212,129 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.body{
+  display:flex;
+  height:80vh;
+  justify-content:center;
+  align-items:center;
+  padding:200px;
+  background:rgb(0,110,110);
+}
+.container{
+  /* display:none; */
+max-width:640px;
+width:100%;
+background:#fff;
+padding:25px 30px;
+border-radius:5px;
+}	 
+.container .title{
+font-size:25px;
+font-weight:500;
+text-align:center;
+}
+/* .container .title::before{
+content:'';
+position:absolute;
+height:3px;
+width:30px;
+background:#9b59b6;
+left:0;
+bottom:0;
+}*/
+.container form .user-details{
+justify-content:space-between;
+margin: 20px 0 23px 33px;
+}
+form .user-details .input-box{
+margin-bottom:15px;
+width:calc(200% / 2 - 90px);
+}
+.user-details .input-box .details{
+display:block;
+font-weight:500;
+margin-bottom:5px;
+}
+.user-details .input-box input{
+  height:45px;
+  width:100%;
+  outline:none;
+  border-radius:5px;
+  border:1px solid #ccc;
+  padding-left:15px;
+  font-size:16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+border-color:#9b59b6;
+}
+.submit{
+    border:none;
+    display: inline-block;
+    margin: 0px 12px;
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+form .button input{
+  height: 30px;
+  width: 85px;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: teal;
+}
+@media (max-width: 584px){
+.container{
+  max-width:100%;
+}
+form .user-details .input-box{
+  margin-bottom:15px;
+  width:100%;
+}
+.container form .user-details{
+  max-height:300px;
+  overflow-y:scroll;
+}
+.user-details::-webkit-scrollbar{
+  width:0;
+}
+}
+.pop{
+  display:none;
+  width: 45rem;
+  height: 20rem;
+  margin: auto;
+  padding: 5px 180px 
+}
+.pop .container{
+  width: 20em;
+  height: 10em;
+  border: 2px solid teal;
+  font-size: large;
+  background-color: lightgrey;
+}
+.pop p{
+  font-size: large;
+  padding: 18px;
+  font-family: Arial, sans-serif;;
+}
+.b{
+  margin: -19px 0px;
+  padding: 1px 113px;
+}
+.b #payment{
+  background-color: #7c84c0;
+  padding:7px;
+  border-radius:2em;
 }
