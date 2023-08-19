@@ -493,3 +493,18 @@ input::-webkit-inner-spin-button {
 .header-content h1{
   font-weight: 0;
 }
+
+#certificate{
+  background-image: url(Images/certificate-template.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  display: flex;
+  aspect-ratio: 2/1.414;
+  resize: auto;
+}
+span#certname{
+  margin: auto;
+  align-self: center;
+  font-size: 20pt;
+}
