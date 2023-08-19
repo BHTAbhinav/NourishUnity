@@ -7,19 +7,10 @@ function success(element) {
     ss.style.margin="20px";
 }
 
-function paymentselect()
-    {
-        var d=document.getElementById("select");
-        var displaytext=d.options[d.selectedIndex].text;
-        document.getElementById("txtvalue").value=displaytext;
-    }
-
-let but=document.getElementsByClassName('button')[0]
-let container=document.getElementsByClassName('container')[0]
-let body=document.getElementsByClassName('body')[0]
-let pop=document.getElementsByClassName('pop')[0]
-but.onclick=()=>{
-    container.style.display="none";   
-    body.style.backgroundColor="white";
-    pop.style.display = "block";
-};
+function generateCertificate() {
+    var cer=document.getElementById("certificate-hidden");
+    var name=document.getElementById("name");
+    var certname=document.getElementById("certname");
+    cer.style.display="";
+    certname.innerHTML=name.value;
+}
