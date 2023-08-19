@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NourishUnity - Home</title>
@@ -88,6 +92,28 @@
       </div>
     </section>
 
+    <section id="mealData" class="text-center bg-gray-200 p-4"></section>
+
+    <script>
+      // Fetch data from Meal DB API and display meal name
+      fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+        .then((response) => response.json())
+        .then((data) => {
+          const mealDataDiv = document.getElementById("mealData");
+          mealDataDiv.innerHTML = `<h2 class="text-xl font-semibold mb-2">Random Nutritious Meal:</h2><p>${data.meals[0].strMeal}</p>`;
+        })
+        .catch((error) => console.error("Error fetching meal data:", error));
+    </script>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+
     <section id="home">
       <p>
         Embracing the strength of unity for impactful change is our ethos at
@@ -116,18 +142,83 @@
         >More About Our Mission</a
       >
     </section>
-    <section id="mealData" class="text-center bg-gray-200 p-4"></section>
+    
 
-    <script>
-      // Fetch data from Meal DB API and display meal name
-      fetch("https://www.themealdb.com/api/json/v1/1/random.php")
-        .then((response) => response.json())
-        .then((data) => {
-          const mealDataDiv = document.getElementById("mealData");
-          mealDataDiv.innerHTML = `<h2 class="text-xl font-semibold mb-2">Random Nutritious Meal:</h2><p>${data.meals[0].strMeal}</p>`;
-        })
-        .catch((error) => console.error("Error fetching meal data:", error));
-    </script>
+     
+      <div class="carousel-inner">
+        
+          <div class="item active">
+              <section class="slides">
+                <h1>Top Nutritious Dishes</h1>
+                  <h2>Moong Dal Chilla (Moong Lentil Pancake)</h2>
+                  <p>
+                    The primary ingredient in chilla is chickpea flour, also called besan. Alternatively, you can also use sprouted mung beans. Mung beans are legumes widely eaten in Asian countries.
+                  <p>
+                      <a href="https://www.indianhealthyrecipes.com/moong-dal-chilla/" target="_blank">Know More..</a>
+                  </p>
+                  <img src="Images/chilla.jpg" alt="Besan Chilla Image">
+              </section>
+          </div>
+
+          <div class="item">
+              <section class = "slides">
+                <h1>Top Nutritious Dishes</h1>
+                  <h2>Steamed Poha (Steamed Flattened Rice)</h2>
+                  <p>
+                    Poha is easily digestible and a tasty meal. It has various health benefits and also has a decent nutrition index profile.
+                  </p>
+                  <p>
+                      <a href="https://www.indianhealthyrecipes.com/poha-recipe-kanda-batata-poha/" target="_blank">Know More..</a>
+                  </p>
+                  <img src="Images/poha.jpg" alt="Poha Image">
+              </section>
+          </div>
+
+          <div class="item">
+            <section class = "slides">
+              <h1>Top Nutritious Dishes</h1>
+                <h2>Chole Masala</h2>
+                <p>
+                  Chole masala is a lunch or dinner food option with a healthy dose of nutrients. Chickpeas are a primary component, also known as chole.
+                </p>
+                <p>
+                    <a href="https://www.indianhealthyrecipes.com/chole/" target="_blank">Know More..</a>
+                </p>
+                <img src="Images/chole.jpg" alt="Chole Masala Image">
+            </section>
+        </div>
+
+        <div class="item">
+          <section class = "slides">
+            <h1>Top Nutritious Dishes</h1>
+              <h2>Dal Fry</h2>
+              <p>
+                In India, daal is a lunch or dinner food. Thoroughly prepared daal contains cumin, turmeric, cinnamon, and other spices, including garam masala.
+              </p>
+              <p>
+                  <a href="https://www.indianhealthyrecipes.com/dal-fry-recipe/" target="_blank">Know More..</a>
+              </p>
+              <img src="Images/dal.jpg" alt="Dal Image">
+          </section>
+      </div>
+
+      <div class="item">
+        <section class = "slides">
+          <h1>Top Nutritious Dishes</h1>
+            <h2>Masala Bhindi</h2>
+            <p>
+              Masala bhindi is a fry of Okra vegetable, also known as Lady Finger, by English people.
+            </p>
+            <p>
+                <a href="https://www.indianhealthyrecipes.com/bhindi-masala-recipe/" target="_blank">Know More..</a>
+            </p>
+            <img src="Images/bhindi.jpg" alt="Masala Bhindi Image">
+        </section>
+    </div>
+          
+      </div>
+  </div>
+  </div>
     <footer>
       <p>&copy; 2023 NourishUnity. All rights reserved.</p>
     </footer>
