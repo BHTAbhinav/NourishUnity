@@ -511,6 +511,6 @@ span#certname {
 }
 
 .caro{
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.9);
   border-radius: 15px;
 }
