@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NourishUnity - Payment</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,24 +35,24 @@
         </nav>
     </div>
     <div class="body">
-        <div class="container">
+        <div class="container" style="box-shadow:3px 3px 10px 1px black">
             <div class="title">
                 <p>Donation Form</p>
                 <p style="font-size:16px">Thanks for donating to our cause</p>
             </div>
-            <form action="#">
+            <form action="add.php" method="POST">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter your full name" required>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="text" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div class="input-box">
                         <span class="details">How much would you like to donate?</span>
-                        <input type="number" placeholder="Enter the amount" required>
+                        <input type="number" id="amount" name="amount" placeholder="Enter the amount" required>
                     </div>
                     <button type="submit" class="btn btn-primary launch" data-toggle="modal"
                         data-target="#staticBackdrop" id="paynow">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-
+        <!-- </form> -->
         </div>
     </div>
     <footer>

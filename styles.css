@@ -225,6 +225,8 @@ nav ul li a:hover {
   align-items: center;
   padding: 200px;
   background: rgb(0, 110, 110);
+  background-image: url(Images/background.jpg);
+  background-repeat: repeat;
 }
 
 .container {
@@ -486,4 +488,8 @@ input::-webkit-inner-spin-button {
   .nav-desktop {
     display: flex;
   }
+}
+
+.header-content h1{
+  font-weight: 0;
 }
